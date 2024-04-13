@@ -55,22 +55,74 @@
         <li> <a class ="fa fa-shopping-bag" href=""></a></li>
     </div>
 </header>
-<section id="Slider">
-<div class="aspect-ratio-169"> <!--lên gg gõ tỉ lệ aspect ratio-->
-    <img src="images/s1.png">
-    <img src="images/s2.png">
-    <img src="images/s3.png">
-    <img src="images/s4.png">
-    <img src="images/s5.png">
-</div>
-<div class="dot-container">
-    <div class="dot active"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-</div>
+<!---------------------------------------product------------------------------------->
+<section class="product">
+    <div class="container">
+        <div class="product-top row">
+            <p>Trang chủ</p> <span>&#10230;</span> <p>Sản phẩm mới</p> <span>&#10230;</span> <p>Áo trên</p>
+        </div>
+        <div class="product-centent row">
+            <div class="product-centent-left row">
+                <div class="product-centent-left-big-img">
+                    <img src="images/clo1.webp" alt="">
+                </div>
+                <div class="product-centent-left-small-img">
+                    <img src="images/clo1.webp" alt="">
+                    <img src="images/clo1.webp" alt="">
+                    <img src="images/clo1.webp" alt="">
+                    <img src="images/clo1.webp" alt="">
+                </div>
+            </div>
+            <div class="product-centent-right">
+                <div class="product-centent-right-product-name">
+                    <h1>Tên</h1>
+                    <p>MSP</p>
+                </div>
+                <div class="product-centent-right-product-price">
+                    <p>Giá<sup>đ</sup></p>
+                </div>
+                <div class="product-centent-right-product-color">
+                    <p><span style="font-weight: bold;">Màu sắc</span>:Xanh cổ vịt nhạt <span style="color:red ">*</span></p>
+                </div>
+                <div class="product-centent-right-product-color-img">
+                    <img src="images/clo1.webp" alt=""> 
+                </div>
+                <div class="product-centent-right-product-size">
+                    <p style="font-weight: bold;">Size:</p>
+                    <div class="size"></div>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                        <span>XXL</span>
+                </div>
+                <div class="quantity">
+                    <p style="font-weight: bold;">Số lượng:</p>
+                    <input type="number" min="0" value="1">
+                    <p style="color: red;">Vui lòng chọn size</p>
+                </div>
+                <div class="product-centent-right-product-button ">
+                    <button><i class="fas fa-shopping-cart"></i><p>MUA HÀNG</p></button>
+                    <button><p>TÌM TẠI CỬA HÀNG</p></button>   
+                </div>
+                <div class="product-centent-right-product-icon">
+                    <div class="product-centent-right-product-icon-item">
+                        <i class="fas fa-phone-alt"></i><p>Hotline</p>
+                    </div>
+                    <div class="product-centent-right-product-icon-item">
+                        <i class="fas fa-comments"></i><p>Chat</p>
+                    </div>
+                    <div class="product-centent-right-product-icon-item">
+                        <i class="fas fa-envelope"></i><p>Mail</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+    </div>
+    
+ 
 </section>
+
 <!---------------------------------------app-container------------------------------------->
 <section class="app-container">
     <p>Tải ứng dụng</p>
@@ -81,6 +133,8 @@
     <p>Nhận bản tin từ chúng tôi</p>
     <input type="text" placeholder="Nhập email của bạn">
 </section>
+
+
 <!---------------------------------------footer------------------------------------->
 <div class="footer-top">
     <li><a href=""><img src="images/dathongbao.png" alt=""></a></li>
@@ -93,6 +147,7 @@
         <a href="" class="fab fa-youtube"></a>
     </li>
 </div>
+<!---------------------------------------------------------------------------------------->
 <div class="footer-center">
     <p>
         Công ty cổ phần Thanh Bình với số đăng ký kinh doanh 1620516828 <br>
@@ -105,8 +160,6 @@
 </div>
 </body>
 
-
-
 <!--------------------------------------menu tiêu đề---------------------------------------------------->
 <script>
     const header = document.querySelector("header")
@@ -118,33 +171,6 @@ window.addEventListener("scroll", function(){
         header.classList.remove("sticky")
     }
 })
-//----------------------------------------------tạo sự chuyển động cho slide------------------------------------//
-//Tạo căng tự động vè bên trái
-const imgPosition = document.querySelectorAll(".aspect-ratio-169 img")
-const imgContainer = document.querySelector(".aspect-ratio-169")
-const dotItem = document.querySelectorAll(".dot")
-let imgNumber = imgPosition.length
-let index = 0
-    //console.log(imgPosition)
-imgPosition.forEach(function(image, index){
-    image.style.left = index*100 + "%"  //Không có câu này tất cả slide chồng lên nhau
-    dotItem[index].addEventListener("click",function(){
-        Slider(index)
-    })
-})
-function imgSlide(){
-    index++;
-    console.log(index)
-    if (index>=imgNumber) {index=0}
-    Slider(index)
-}
-function Slider(index){
-    imgContainer.style.left = "-" +index*100+ "%"
-    const dotActive = document.querySelector('.active')
-    dotActive.classList.remove("active")
-    dotItem[index].classList.add("active")
-}
-setInterval(imgSlide,5000)
-
 </script>
+
 </html>
