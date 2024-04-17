@@ -3,15 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
-li{
-    list-style: none;
+
+html{
+    font-family: Helvetica,Arial, sans-serif;
 }
-a{
-    text-decoration: none;
-    color: #000;
-}
-header{
+
+#header{
+    height: 100px;
     display: flex; /*Căng theo chiều ngang*/
     justify-content: space-between;
     padding: 12 50px;
@@ -19,59 +19,45 @@ header{
     align-items: center;
     position: fixed; /*Cố định*/
     top: 0;
-    left: 0;
+    left: 5;
     width: 100%;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.3);
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
 }
-header:hover{
-    background: rgba(255, 255, 255, 1);
+
+
+#menu{
+    display: inline-block;
+    list-style-type:none;
 }
-.logo{ 
-    flex: 1;
+#menu  li {
+    display: inline-block; 
 }
-.menu{
-    flex: 3;
-    display: flex;
-}
-.menu > li {
-    padding: 0 12px;
+
+
+#menu li{
+     /* sap xep lai cac thuoc tinh con  */
     position: relative;
 }
-.menu > li:hover .sub-menu{ 
-    visibility: visible;
-    top: 30px;
-    opacity: 1; /* Hiển thị menu khi hover */
-    top: 60px; /* Dịch chuyển menu xuống một chút */
-    
+
+#menu li:hover a{
+    color:#000;
+    background-color:aqua;
 }
-.sub-menu{
-    position: absolute; 
-    width: 150px;
-    border: 1px solid #CCC;
-    padding: 10px 0 10px 20px;
-    visibility: hidden;
-    top: 50px;
-    opacity: 0; /* Ẩn menu ban đầu */
-    transition: opacity 0.3s ease, top 0.3s ease; /* Hiệu ứng transition cho opacity và top */
-    /*transition: 0.3s;*/
-    z-index: 1;
-    background: #fff;
-    
+
+#menu > li > a{
+    color:#000;
+    text-transform:uppercase;
 }
-.sub-menu ul{
-    padding-left: 20px;
+#menu li a{
+    text-decoration:none;
+    line-height: 65px;
+    padding: 0 15px;
+    display:block;
+   
 }
-.sub-menu li ul a{
-    font-weight: normal;
-    font-size: 12px!important;
-}
-.menu  li  a{
-    font-size: 12px;
-    font-weight: bold!important;
-    display: block;
-    line-height: 20px;
-}
+
 .others{
     flex: 1;
     display: flex;
@@ -90,6 +76,7 @@ header:hover{
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  
 }
 .others > li:first-child{
     position: relative;
@@ -120,12 +107,13 @@ header:hover{
   .aspect-ratio-169 img {
     display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width:100%;
+    height:90%;
     top: 0;
     left: 0;
+    animation: slideImage 10s infinite alternate;
   }
-.dot-container{
+/* .dot-container{
     position: absolute;
     height: 30px;
     width: 100%;
@@ -133,6 +121,7 @@ header:hover{
     align-items: center;
     text-align: center;
     justify-content: center;
+    animation: slideImage 10s infinite alternate;
 }
 .dot{
     height: 16px;       
@@ -141,21 +130,33 @@ header:hover{
     border-radius: 50%;
     margin: 12px;
     cursor: pointer;
+     animation: slideImage 10s infinite alternate;
 }
 .dot.active{
     background-color: #333;
+} */
+
+/*---------------------------------------footer-------------------------------------*/
+#content{
+    height: 600px;
 }
-/*---------------------------------------app-------------------------------------*/
+footer{
+    text-align: center;
+    height:100px;
+}
+
 .app-container{
     text-align: center;
     align-items: center;
     padding: 150px 0 50px 0;
+
+    margin-bottom: -100px;
 }
 .app-google{
     margin: 50px;
 }
 .app-google img{
-    height: 70px;
+    height: 50px;
     cursor: pointer;
 }
 .app-container p {
@@ -173,10 +174,6 @@ header:hover{
     width: 400px;
     text-align: center;
     outline: none;
-}
-/*---------------------------------------footer-------------------------------------*/
-footer{
-    text-align: center;
 }
 .footer-top{
     display: flex;
@@ -222,6 +219,8 @@ footer{
 .row{
     display: flex;
     flex-wrap: wrap;
+    margin-top: -50px;
+    margin-bottom: 20px;
 }
 /*--------------------------------------------cartegory----------------------------------*/
 .cartegory{
@@ -235,9 +234,8 @@ footer{
     margin: 0 12px;
     font-size: 12px;
 }
-.cartegory-left{
-    width: 20%;
-}
+
+
 .cartegory-right{
     width: 80%;
 }   
@@ -251,6 +249,7 @@ footer{
     flex: 1;
     padding: 0 12px;
 }
+
 .cartegory-right-top-item button{
     width: 100%;
     padding: 10px 15px;
@@ -273,11 +272,18 @@ footer{
     margin: 20px;
     justify-content: space-between;
 }
+
 .cartegory-right-content-item{
     width: calc(25% - 12px); /*Công thức làm ảnh chia đều theo bố cục*/
     text-align: center;
     padding: 12px 0;
+    background-color: #f0f0f0;
+    border:2px solid #CCC;
+    margin: 5px;
+    left:100px;
 }
+
+
 .cartegory-right-content-item h1{
     font-size: 11px;
     font-family: Arial, Helvetica, sans-serif;
