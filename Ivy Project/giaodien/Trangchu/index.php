@@ -1,27 +1,32 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
-        <title>Ivy-Project</title>
+        <title>Trang Chủ</title>
     </head>
     <body>
-        
                 <div id="header">
                     <div id="main">
+                        <div>
+                            <img src="./images/logo.png">
+                        </div>
+                    </div>
                         <ul id="menu">
-                           
+                            <li><a href="">Trang Chủ</a></li>
                             <li><a href="">SẢN PHẨM MỚI</a> </li>
                             <li><a href="">ĐẦM</a></li>
                             <li><a href="">ÁO TRÊN</a></li>
                             <li><a href="">QUẦN</a></li>
                             <li><a href="">GIÀY DÉP</a></li>
-                            <li><a href="">PHỤ KIỆN</a></li>
-                            <li><a href="">TÚI</a></li>
                             <li><input placeholder="Tìm kiếm" type="text"> <i class="fas fa-search"></i></li>
-                            <li><a href="index.php?do=dangnhap">Đăng Nhập</a></li>
+                            <li><a href="">Đăng Nhập</a></li>
                             <li><a href="">Đăng ký</a></li>
                             <li> <a class ="fa fa-shopping-bag" href=""></a></li>
                         </ul>
@@ -50,7 +55,7 @@
                     <div class="app-google">
                         <p>Tải ứng dụng</p>
                         <img src="images/appstore.png">
-                        <img src="images/ggplay.png">
+                        <img src="images/ggplay.jpg">
                     </div>
                 </section>
                 <div class="footer-top">
