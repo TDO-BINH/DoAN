@@ -1,5 +1,11 @@
 <?php
-
+    //session_set_cookie_params(30); // 1800 giây = 30 phút
+	session_start();
+	
+	
+	include_once "cauhinh.php";
+	
+	include_once "thuvien.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,12 +25,10 @@
                         </div>
                     </div>
                         <ul id="menu">
-                            <li><a href="">Trang Chủ</a></li>
-                            <li><a href="">SẢN PHẨM MỚI</a> </li>
-                            <li><a href="">ĐẦM</a></li>
-                            <li><a href="">ÁO TRÊN</a></li>
-                            <li><a href="">QUẦN</a></li>
-                            <li><a href="">GIÀY DÉP</a></li>
+                            <li><a href="index.php?do=home">Trang Chủ</a></li>
+                            <li><a href="index.php?do=Ao">Áo</a> </li>
+                            <li><a href="index.php?do=Quan">QUẦN</a></li>
+                            <li><a href="index.php?do=Giay">GIÀY DÉP</a></li>
                             <li><input placeholder="Tìm kiếm" type="text"> <i class="fas fa-search"></i></li>
                             <li><a href="">Đăng Nhập</a></li>
                             <li><a href="">Đăng ký</a></li>
