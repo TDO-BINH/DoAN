@@ -30,9 +30,6 @@
                             <li><a href="index.php?do=Quan">QUẦN</a></li>
                             <li><a href="index.php?do=Giay">GIÀY DÉP</a></li>
                             <li><input placeholder="Tìm kiếm" type="text"> <i class="fas fa-search"></i></li>
-                            <li><a href="">Đăng Nhập</a></li>
-                            <li><a href="">Đăng ký</a></li>
-                            <li> <a class ="fa fa-shopping-bag" href=""></a></li>
                         </ul>
                     </div>
                 </div>
@@ -48,7 +45,6 @@
             <?php
                                 
                                 $do = isset($_GET['do']) ? $_GET['do'] : "home";
-                                
                                 include $do . ".php";
                             ?>
         </div>

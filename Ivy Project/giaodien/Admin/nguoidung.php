@@ -30,9 +30,9 @@
             
             echo "<td>";
                     if($dong["QuyenHan"]==1)
-                        echo "Quản trị (<a href='index.php?do=nguoidung_kichhoat&id= " . $dong["MaNguoiDung"] ."&quyen=2'>Hạ quyền </a>)";
+                        echo "Quản trị (<a href='index.php?do=nguoidungkichhoat&id= " . $dong["MaNguoiDung"] ."&quyen=2'>Hạ quyền </a>)";
                     else
-                    echo "Thành viên (<a href='index.php?do=nguoidung_kichhoat&id= " . $dong["MaNguoiDung"] ."&quyen=1'>Nâng Quyền </a>)";
+                    echo "Thành viên (<a href='index.php?do=nguoidungkichhoat&id= " . $dong["MaNguoiDung"] ."&quyen=1'>Nâng Quyền </a>)";
                 echo "</td>";
 
                 echo "<td align='center'>";

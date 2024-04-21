@@ -26,12 +26,13 @@
 					echo "<div class='card'>";					
 						echo "<img class='hinhanhphim' src=" . $row["HinhAnh"] . " style='width: 190px; height: 140px;'>";
 						echo "<span class=\"giaban\">". $row["DonGia"] ." đ</span>";
-					     echo "<p><a  href=''>". $row["TenSanPham"] ." </a></p>";
+					     echo "<p><a style='text-decoration: none;color:#000' href=''>". $row["TenSanPham"] ." </a></p>";
 					echo "</div>";		
 				echo "</div>";	
 			}
 
 			if (isset($_SESSION['limit_home']) && $count_kq > $_SESSION['limit_home']) {
+				echo "<a href='index.php?do=giohang_them'>Thêm vào Giỏ</a>";
             }
             
 			{

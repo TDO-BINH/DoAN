@@ -114,28 +114,6 @@ html{
     left: 0;
     animation: slideImage 10s infinite alternate;
   }
-/* .dot-container{
-    position: absolute;
-    height: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    animation: slideImage 10s infinite alternate;
-}
-.dot{
-    height: 16px;       
-    width: 16px;
-    background-color: #CCC;
-    border-radius: 50%;
-    margin: 12px;
-    cursor: pointer;
-     animation: slideImage 10s infinite alternate;
-}
-.dot.active{
-    background-color: #333;
-} */
 
 /*---------------------------------------footer-------------------------------------*/
 #content{
@@ -223,123 +201,7 @@ footer{
     margin-top: -50px;
     margin-bottom: 20px;
 }
-/*--------------------------------------------cartegory----------------------------------*/
-.cartegory{
-    padding: 100px 0 0;
-}
-.cartegory-top{
-    margin-bottom: 50px;
-}
-.cartegory-top p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 12px;
-    font-size: 12px;
-}
 
-
-.cartegory-right{
-    width: 80%;
-}   
-.cartegory-right-top-item:first-child{
-    flex: 2;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-.cartegory-right-top-item{
-    flex: 1;
-    padding: 0 12px;
-}
-
-
-.cartegory-right-content-item:hover{
-    background:cadetblue;
-}
-
-.cartegory-right-top-item button{
-    width: 100%;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    background: #ffff;  
-    border: 1px solid #dddddd;
-    cursor: pointer;
-}
-.cartegory-right-top-item select{
-    width: 100%;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: space-between;
-    background: #ffff;
-    border: 1px solid #dddddd;
-    cursor: pointer;
-}
-.cartegory-right-content{
-    margin: 20px;
-    justify-content: space-between;
-}
-
-.cartegory-right-content-item{
-    width: calc(25% - 12px); /*Công thức làm ảnh chia đều theo bố cục*/
-    text-align: center;
-    padding: 12px 0;
-    background-color: #f0f0f0;
-    border:2px solid #CCC;
-    margin: 5px;
-    left:100px;
-}
-
-
-.cartegory-right-content-item h1{
-    font-size: 11px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 6px;
-    color: #333333;
-}
-.cartegory-right-content-item img{
-    width: 100%;
-}
-.cartegory-right-content-item p {
-    font-size: 12px;
-}
-.cartegory-right-bottom{
-    justify-content: space-between;
-    margin: 30px 0 20px;
-    width: 100%;
-}
-.cartegory-right-bottom p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 11px;
-}
-.cartegory-left ul {
-    padding-left: 20px; /* Thêm khoảng cách 20px vào bên trái của danh sách ul */
-}
-.cartegory-left ul li{
-    padding: 12px 0;
-}
-.cartegory-left ul li>a{
-    color: black;
-    font-size: 16px;    
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.cartegory-left ul li ul li{
-    padding-left: 10px;
-}
-
-/*
-.cartegory-left-li ul {
-    display: none; 
-}
-
-.cartegory-left-li.block ul {
-    display: block;
-}*/
-
-.cartegory-left ul li ul li a{
-    color: #333333;
-    font-size: 12px;
-}
 /*---------------------------------------------------product------------------------------------*/
 .product{
     padding: 100px 0;
@@ -385,10 +247,13 @@ footer{
 {
     width: 250px;
     height: 260px;	
-    background-color: aqua;
+    background-color:floralwhite;
     text-align: center;
     float: left;
     margin: 20px;
+    justify-content: space-between;
+    display: flex;
+    
 }
 
 .card {
@@ -405,6 +270,9 @@ footer{
 	float: left;
 }
 
-.khungsp card:hover{
-   
+.row{
+    width: 234px;
+    height: 200px;
+    margin: 8px;
+    text-align:center;
 }
