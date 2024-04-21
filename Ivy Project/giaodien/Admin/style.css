@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#main{
+	width: 900px;
+	margin: 0 auto;
+	border: 1px solid;
+}
+
+#header{
+	width: 900px;
+	height: 120px;
+	background: url(../Admin/images/banner-quan-ao-inkythuatso-13-10-16-26.jpg);
+	color:#000;
+	font-size: 16px;
+	font-weight:bold;
+	text-align: right;
+}
+#left{
+	width:200px;
+	float:left;
+}
+
+
+#content {
+	width: 900px;
+}
+
+#BenTrai {
+	width: 200px;
+	float: left;
+}
+
+#left h3{
+    font-size: 20px;
+	padding: 2px 0 0 5px;
+	margin-bottom: 0;
+	margin-top: 8px;
+	background-color: #228B22;
+	color: #ffffff;
+}
+
+#left ul li{
+    
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 5px;
+	padding-left: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 1px solid #228B22;
+}
+
+#left ul  li a {
+    text-decoration: none;
+	color: #0000ff;
+
+}
+
+#left ul li a:hover{
+    text-decoration: underline;
+	color:#333;
+}
+
+
+#right{
+    width: 690px;
+	float: right;
+}
+
+#right h3{
+    font-size: 20px;
+	padding: 2px 0 10px 0;
+	color: #4169E1;
+	font-family: Tahoma;
+	margin-top: 100px;
+	margin-bottom: 0;
+	text-shadow: 2px 2px 3px #00FF00;
+}
+
+
+#footer{
+	width: 900px;
+	clear: both;
+	height: 50px;
+	
+}
+
+.app-container{
+    text-align: center;
+    align-items: center;
+    padding: 150px 0 50px 0;
+
+    margin-bottom: -100px;
+}
+.app-google{
+    margin: 50px;
+}
+.app-google img{
+    height: 50px;
+    cursor: pointer;
+}
+.app-container p {
+    line-height: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    color: #000;
+    font-weight: bold;
+}
+.app-container input{
+    margin-top: 50px;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding-bottom: 20px;
+    width: 400px;
+    text-align: center;
+    outline: none;
+}
+.footer-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.footer-top img{
+    height: 50px;
+}
+.footer-top li{
+    padding: 0 12px;
+    position: relative;
+}
+.footer-top li::after{
+    content:"";
+    display: block;
+    width: 1px;
+    height: 80%;
+    background: #CCCCCC;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-top li:last-child::after{
+    display: none;
+}
+.footer-top li:last-child a {
+    margin-right: 12px;
+    color: #333;
+}
+.footer-center{
+    text-align: center;
+}
+.footer-bottom{
+    margin: 20px 0;
+    text-align: center;
+}
