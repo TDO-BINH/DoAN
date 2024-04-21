@@ -21,29 +21,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Đăng ký</title>
-    <!-- Các thẻ meta, link CSS và script -->
+    
 </head>
 <body>
     <!-- Form đăng ký -->
-    <h3>Đăng ký</h3>
-<<<<<<< HEAD
-    <form action="dangky_xuly.php" method="post">
-        <label for="HoVaTen">Họ và tên:</label>
-        <input type="text" id="HoVaTen" name="HoVaTen" value="<?php echo $HoVaTen; ?>"><br><br>
-
-        <label for="TenDangNhap">Tên đăng nhập:</label>
-        <input type="text" id="TenDangNhap" name="TenDangNhap" value="<?php echo $TenDangNhap; ?>"><br><br>
-
-        <label for="MatKhau">Mật khẩu:</label>
-        <input type="password" id="MatKhau" name="MatKhau"><br><br>
-
-        <label for="XacNhanMatKhau">Xác nhận mật khẩu:</label>
-        <input type="password" id="XacNhanMatKhau" name="XacNhanMatKhau"><br><br>
-
-        <input type="submit" value="Đăng ký">
-    </form>
-=======
+        <!-- <a>Đăng Ký</a> -->
     <div class="row">
     <form action="dangky_xuly.php" method="post">
         <div>
@@ -65,6 +47,5 @@
         <input type="submit" value="Đăng ký">
     </form>
     </div>
->>>>>>> 275d9d80c2dff75c60a9bb17777662d0bf02d7ca
 </body>
 </html>

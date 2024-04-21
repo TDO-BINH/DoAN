@@ -114,28 +114,6 @@ html{
     left: 0;
     animation: slideImage 10s infinite alternate;
   }
-/* .dot-container{
-    position: absolute;
-    height: 30px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    animation: slideImage 10s infinite alternate;
-}
-.dot{
-    height: 16px;       
-    width: 16px;
-    background-color: #CCC;
-    border-radius: 50%;
-    margin: 12px;
-    cursor: pointer;
-     animation: slideImage 10s infinite alternate;
-}
-.dot.active{
-    background-color: #333;
-} */
 
 /*---------------------------------------footer-------------------------------------*/
 #content{
@@ -223,19 +201,8 @@ footer{
     margin-top: -50px;
     margin-bottom: 20px;
 }
-/*--------------------------------------------cartegory----------------------------------*/
-.cartegory{
-    padding: 100px 0 0;
-}
-.cartegory-top{
-    margin-bottom: 50px;
-}
-.cartegory-top p{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0 12px;
-    font-size: 12px;
-}
 
+<<<<<<< HEAD
 
 .cartegory-right{
     width: 80%;
@@ -340,6 +307,8 @@ footer{
     color: #333333;
     font-size: 12px;
 }
+=======
+>>>>>>> 275d9d80c2dff75c60a9bb17777662d0bf02d7ca
 /*---------------------------------------------------product------------------------------------*/
 .product{
     padding: 100px 0;
@@ -377,4 +346,40 @@ footer{
 .product-centent-right{
     width: 50%;
     padding-left: 20px;
+}
+
+
+
+.khungsp
+{
+    width: 250px;
+    height: 260px;	
+    background-color:floralwhite;
+    text-align: center;
+    float: left;
+    margin: 20px;
+    justify-content: space-between;
+    display: flex;
+    
+}
+
+.card {
+    width: 234px;
+    height: 200px;
+    margin: 8px;
+    padding: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s;
+    text-align: center;
+	border: 1px solid red;
+	float: left;
+}
+
+.row{
+    width: 234px;
+    height: 200px;
+    margin: 8px;
+    text-align:center;
 }

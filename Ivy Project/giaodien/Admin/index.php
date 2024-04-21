@@ -26,7 +26,11 @@
                                         if(isset($_SESSION['MaND']) && isset($_SESSION['HoTen']))
                                         {
                                                 echo "<br><br><br><br><br>Xin Chào ".$_SESSION['HoTen']." &nbsp;&nbsp;|| &nbsp;&nbsp;";
+<<<<<<< HEAD
                                                 echo '<a href="dangxuat.php">Đăng xuất</a>'."&nbsp;&nbsp;";
+=======
+                                                echo '<a href="index.php?do=dangxuat">Đăng xuất</a>'."&nbsp;&nbsp;";
+>>>>>>> 275d9d80c2dff75c60a9bb17777662d0bf02d7ca
                                         }
                                 ?> 
                         </div>
@@ -46,6 +50,7 @@
                                                 else
 					        {
 						echo '<h3>Quản lý</h3>';
+<<<<<<< HEAD
 						echo '<ul>';						
 							echo '<li><a href="index.php?do=nguoidung">Danh sách người dùng</a></li>';
 								
@@ -56,6 +61,21 @@
 						echo '</ul>';
 					        }
 
+=======
+						echo '<ul>';							
+							if($_SESSION['QuyenHan'] == 2)
+							{
+								echo '<li><a href="index.php?do=themsp">Thêm Sản Phẩm </a><li>';
+							}else if ($_SESSION['QuyenHan'] == 1) 
+                                                        {
+                                                                echo '<li><a href="index.php?do=themsp">Thêm Sản Phẩm</a><li>';
+                                                                echo '<li><a href="index.php?do=danhsachsp">Danh sách Sản phẩm</a><li>';
+                                                                echo '<li><a href="index.php?do=nguoidung">Quản lý người dùng</a><li>';
+                                                        }
+
+						echo '</ul>';
+					        }
+>>>>>>> 275d9d80c2dff75c60a9bb17777662d0bf02d7ca
                                                 //hiện menu hồ sơ cá nhân					
                                                 if(isset($_SESSION['MaND']))
                                                 {
@@ -69,11 +89,18 @@
 
                                 </div>
                                 <div id="right">
+<<<<<<< HEAD
 					<?php
 						$do = isset($_GET['do']) ? $_GET['do'] : "home";
 						
 						include $do . ".php";
 					?>
+=======
+                                <?php
+                                $do = isset($_GET['do']) ? $_GET['do'] : "home";
+                                include $do . ".php";
+                            ?>
+>>>>>>> 275d9d80c2dff75c60a9bb17777662d0bf02d7ca
 				</div>
                         </div>
                 
@@ -82,7 +109,11 @@
                                 <section class="app-container">
                                 <div class="app-google">
                                         <p>Tải ứng dụng</p>
+<<<<<<< HEAD
                                         <img src="images/appstore.png"> 
+=======
+                                        <img src="images/appstore.png">
+>>>>>>> 275d9d80c2dff75c60a9bb17777662d0bf02d7ca
                                         <img src="images/ggplay.jpg">
                                 </div>
                                 </section>

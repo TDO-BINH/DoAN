@@ -57,19 +57,5 @@
         }
     }
 ?>
-<<<<<<< HEAD
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Quản Lý</title>
-    <!-- Các thẻ meta, link CSS và script -->
-</head>
-<body>
-    <!-- Phần nội dung trang -->
-</body>
-</html>
-=======
 
->>>>>>> 275d9d80c2dff75c60a9bb17777662d0bf02d7ca
 
